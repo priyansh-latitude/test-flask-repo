@@ -9,5 +9,9 @@ def welcome():
 def home():
     return "Home Page"
 
+@app.route("/contact")
+def contact():
+    return "Contact Us"
+
 if __name__ == "__main__":
     app.run(debug=True)
