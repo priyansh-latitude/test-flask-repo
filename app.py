@@ -2,12 +2,12 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def welcome():
-    return "Hello, Flask!"
-
-@app.route("/home")
 def home():
-    return "Home Page"
+    return "Hello, Flask! This is home page"
+
+@app.route("/welcome")
+def home():
+    return "Welcome Page"
 
 @app.route("/contact")
 def contact():
